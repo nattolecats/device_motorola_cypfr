@@ -20,8 +20,8 @@ if ! [ -a $KERNEL_SOURCE ]; then git clone https://github.com/nattolecats/kernel
 VENDOR=vendor/motorola/cypfr/cypfr-vendor.mk
 if ! [ -a $VENDOR ]; then git clone https://github.com/nattolecats/vendor_motorola_cypfr vendor/motorola/cypfr ; fi
 
-FELICA=vendor/motorola/cypfr-felica/device.mk
-if ! [ -a $FELICA ]; then git clone https://github.com/nattolecats/vendor_motorola_cypfr-felica vendor/motorola/cypfr-felica ; fi
+FELICA=vendor/motorola/felica-common/device.mk
+if ! [ -a $FELICA ]; then git clone https://github.com/nattolecats/vendor_motorola_felica-common vendor/motorola/felica-common ; fi
 
 MOTO=packages/apps/MotoActions/Android.mk
 if ! [ -a $MOTO ]; then git clone https://github.com/nattolecats/packages_apps_MotoActions packages/apps/MotoActions ; fi
